@@ -8,7 +8,11 @@ app.get("/welcome", (req, res) => {
 });
 
 app.get("/goodbye", (req, res) => {
-  res.send("goodbye this is the last lecture of PT-web-16-backend ");
+  res.send("goodbye this is the last lecture of PT-web-16-backend. ");
+});
+
+app.get("/instructor", (req, res) => {
+  res.send(`this is our instructor for the last week whos name is ${process.env.NAME} `);
 });
 
 const PORT = process.env.PORT;
