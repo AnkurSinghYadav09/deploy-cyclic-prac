@@ -12,14 +12,16 @@ app.get("/goodbye", (req, res) => {
 });
 
 app.get("/instructor", (req, res) => {
-  res.send(`this is our instructor for the last week whos name is ${process.env.NAME} `);
+  res.send(
+    `this is our instructor for the last week whos name is ${process.env.NAME} `
+  );
 });
 
 const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
   try {
-    console.log("listening on port " + PORT);
+    console.log(`listening on port ` + PORT);
   } catch (error) {
     console.log(error);
   }
