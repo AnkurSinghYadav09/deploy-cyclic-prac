@@ -1,0 +1,29 @@
+***deployment***
+
+i am giving you 5 minutes to buiold something :--
+
+create a basic express application with 2 api endpoints
+we will be back on 9:00pm
+
+**backend-platforms**
+1]heroku--paid
+2]render--free but slow
+3]Railway--- slow
+4]***cyclic--- this fast and paid.. but provide one deployment for free.
+
+
+Points to follow:--
+
+1] ensure that in package.json you add the "start" script.
+2] have its valueas "start":"node index.js".
+          - dont have "server" or anything else instead of start
+          - dont have nodemon insetead of node.
+          - dont have server.js or xyz.js instead of index.js file name
+
+3] keep your PORT number in the variable preferably from .env as PORT instead of hardcoding. 
+4] you can keep all your secret things inside in the .env file {jsonwebtoken secretToken, mongodb url etc}
+
+
+
+
+
